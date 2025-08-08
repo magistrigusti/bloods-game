@@ -1,10 +1,10 @@
 import { Loader, PerformanceMonitor, SoftShadows } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
+// import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { Physics } from "@react-three/rapier";
 import { Suspense, useState } from "react";
 import { Experience } from "./components/Experience";
-import { Leaderboard } from "./components/Leaderboard";
+// import { Leaderboard } from "./components/Leaderboard";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <SoftShadows size={42} />
       
       <Suspense>
-        <Physics>
+        <Physics debug>
           <Experience />
         </Physics>
       </Suspense>

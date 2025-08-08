@@ -8,10 +8,9 @@ import {
   useMultiplayerState,
 } from "playroomkit";
 import { useEffect, useState } from "react";
-import { Bullet } from "./Bullet";
-import { BulletHit } from "./BulletHit";
+// import { Bullet } from "./Bullet";
+// import { BulletHit } from "./BulletHit";
 import { CharacterController } from "./CharacterController";
-import { Map } from "./Map";
 
 export const Experience = ({ downgradedPerformance = false }) => {
   const [players, setPlayers] = useState([]);
